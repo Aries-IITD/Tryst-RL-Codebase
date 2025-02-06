@@ -15,3 +15,6 @@ Your server is now hosted locally.
 For the bot client, in the `client` folder create a venv and install all dependencies from `requirements.txt`.
 
 Put the port number in the websocket link in `client/env.txt`.
+
+
+Poke-Env library is open source and available at https://github.com/hsahovic/poke-env/
