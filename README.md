@@ -1,0 +1,17 @@
+To setup the server, do: 
+```
+git clone https://github.com/smogon/pokemon-showdown.git server
+```
+
+You also need Node.js.
+
+```
+./pokemon-showdown [port_no] --no-security
+```
+
+Your server is now hosted locally.
+
+
+For the bot client, in the `client` folder create a venv and install all dependencies from `requirements.txt`.
+
+Put the port number in the websocket link in `client/env.txt`.

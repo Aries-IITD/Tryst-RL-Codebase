@@ -1,0 +1,54 @@
+Venusaur @ Life Orb  
+Ability: Chlorophyll  
+Tera Type: Grass  
+EVs: 1 HP  
+IVs: 0 Atk  
+- Earth Power  
+- Sludge Bomb  
+- Energy Ball  
+- Synthesis  
+
+Ninetales @ Heat Rock  
+Ability: Drought  
+Tera Type: Fire  
+EVs: 1 HP  
+IVs: 0 Atk  
+- Fire Blast  
+- Scorching Sands  
+- Solar Beam  
+- Nasty Plot  
+
+Golem @ Expert Belt  
+Ability: Sturdy  
+Tera Type: Rock  
+EVs: 1 HP  
+- Stealth Rock  
+- Stone Edge  
+- Earthquake  
+- Explosion  
+
+Vaporeon @ Leftovers  
+Ability: Water Absorb  
+Tera Type: Water  
+EVs: 1 HP  
+- Scald  
+- Flip Turn  
+- Wish  
+- Protect  
+
+Victreebel @ Life Orb  
+Ability: Chlorophyll  
+Tera Type: Grass  
+EVs: 1 HP  
+- Power Whip  
+- Poison Jab  
+- Sucker Punch  
+- Swords Dance  
+
+Hitmonchan (M) @ Assault Vest  
+Ability: Iron Fist  
+Tera Type: Fighting  
+EVs: 1 HP  
+- Close Combat  
+- Knock Off  
+

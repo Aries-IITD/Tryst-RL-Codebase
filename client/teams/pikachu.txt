@@ -1,0 +1,56 @@
+Pikachu @ Light Ball  
+Ability: Lightning Rod  
+Tera Type: Electric  
+EVs: 1 HP  
+- Fake Out  
+- Volt Tackle  
+- Play Rough  
+- Volt Switch  
+
+Slowbro @ Rocky Helmet  
+Ability: Regenerator  
+Tera Type: Water  
+EVs: 1 HP  
+IVs: 0 Atk  
+- Scald  
+- Future Sight  
+- Slack Off  
+- Thunder Wave  
+
+Scyther @ Heavy-Duty Boots  
+Ability: Technician  
+Tera Type: Bug  
+EVs: 1 HP  
+- Close Combat  
+- Dual Wingbeat  
+- Defog  
+- U-turn  
+
+Flareon @ Toxic Orb  
+Ability: Guts  
+Tera Type: Fire  
+EVs: 1 HP  
+- Facade  
+- Quick Attack  
+- Flare Blitz  
+- Trailblaze  
+
+Snorlax @ Leftovers  
+Ability: Immunity  
+Tera Type: Normal  
+EVs: 1 HP  
+- Body Slam  
+- Curse  
+- Rest  
+- Sleep Talk  
+
+Venomoth @ Life Orb  
+Ability: Tinted Lens  
+Tera Type: Bug  
+EVs: 1 HP  
+IVs: 0 Atk  
+- Bug Buzz  
+- Sludge Wave  
+- Sleep Powder  
+- Quiver Dance  
+

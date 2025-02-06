@@ -1,0 +1,57 @@
+Blastoise @ White Herb  
+Ability: Torrent  
+Tera Type: Water  
+EVs: 1 HP  
+- Hydro Pump  
+- Earthquake  
+- Ice Beam  
+- Shell Smash  
+
+Ninetales-Alola @ Light Clay  
+Ability: Snow Warning  
+Tera Type: Ice  
+EVs: 1 HP  
+IVs: 0 Atk  
+- Moonblast  
+- Freeze-Dry  
+- Aurora Veil  
+- Encore  
+
+Gengar @ Focus Sash  
+Ability: Cursed Body  
+Tera Type: Ghost  
+EVs: 1 HP  
+IVs: 0 Atk  
+- Sludge Wave  
+- Shadow Ball  
+- Focus Blast  
+- Nasty Plot  
+
+Sandslash @ Leftovers  
+Ability: Sand Veil  
+Tera Type: Ground  
+EVs: 1 HP  
+- Earthquake  
+- Stone Edge  
+- Spikes  
+- Rapid Spin  
+
+Arcanine @ Heavy-Duty Boots  
+Ability: Intimidate  
+Tera Type: Fire  
+EVs: 1 HP  
+- Flare Blitz  
+- Extreme Speed  
+- Wild Charge  
+- Morning Sun  
+
+Exeggutor @ Sitrus Berry  
+Ability: Harvest  
+Tera Type: Grass  
+EVs: 1 HP  
+IVs: 0 Atk  
+- Psyshock  
+- Giga Drain  
+- Calm Mind  
+- Substitute  
+
