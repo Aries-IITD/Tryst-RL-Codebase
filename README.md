@@ -19,6 +19,11 @@ node pokemon-showdown [port_no] --no-security
 
 Your server is now hosted locally.
 
+To enable the ladder for the format, replace the formats.ts file in server/config.
+
+If you get an error in running the driver after a crash, restart the server.
+
+
 
 For the bot client, in the `client` folder create a venv and install all dependencies from `requirements.txt`.
 
