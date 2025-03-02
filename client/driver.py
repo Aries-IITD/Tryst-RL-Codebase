@@ -1,4 +1,4 @@
-from include import *
+from include import Ply, RPly, CHARIZARD, TEAMS, Battle
 from poke_env import ServerConfiguration
 from poke_env.data import GenData
 import asyncio 
@@ -7,7 +7,7 @@ import os
 from ai import *
 import random
 
-parser = argparse.ArgumentParser(description="Usage of the driver script")
+parser = argparse.ArgumentParser(description="Driver script for executing battles with your custom AI:")
 
 parser.add_argument('ai1', type=str, choices=['random', 'ai1', 'ai2', 'ai3', 'ai4'], help="First player class")
 parser.add_argument('ai2', nargs='?', type=str, default="random", choices=['random', 'ai1', 'ai2', 'ai3', 'ai4'], help="Second player class")
@@ -45,7 +45,7 @@ def get_kwargs(ply):
         "server_configuration": LocalServerConfig,
         "code": code,
         "start_timer_on_battle_start": True,
-        "battle_format": 'gen9ubers',
+        "battle_format": 'gen7letsgoou',
         "log_level": 0
     }
 
@@ -78,7 +78,7 @@ async def main(log=False):
         for battle_tag, battle in player1.battles.items():
             print(battle_tag, battle.won)
 
-        print(sum([x.won for x in player1.battles.values()]) / len(player1.battles))
+        print(sum([x.won for x in player1.battles.values() if x]) / len(player1.battles))
 
 
 if __name__ == "__main__":
