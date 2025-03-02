@@ -8,6 +8,14 @@ You also need Node.js.
 ```
 ./pokemon-showdown [port_no] --no-security
 ```
+(Linux)
+
+or 
+
+```
+node pokemon-showdown [port_no] --no-security
+```
+(Windows)
 
 Your server is now hosted locally.
 
