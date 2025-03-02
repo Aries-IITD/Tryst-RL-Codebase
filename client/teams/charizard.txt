@@ -1,57 +1,55 @@
-Charizard @ Heavy-Duty Boots  
-Ability: Blaze  
-Tera Type: Fire  
-EVs: 1 HP  
-IVs: 0 Atk  
+Charizard-Mega-Y @ Charizardite Y  
+Ability: No Ability  
+Level: 50  
+Hasty Nature  
+- Fire Blast  
+- Flamethrower  
+- Air Slash  
 - Earthquake  
-- Flare Blitz  
-- Outrage  
-- Dragon Dance  
 
-Zapdos @ Heavy-Duty Boots  
-Ability: Static  
-Tera Type: Electric  
-EVs: 1 HP  
-IVs: 0 Atk  
-- Thunderbolt  
-- Hurricane  
-- Volt Switch  
-- Roost  
-
-Tentacruel @ Black Sludge  
-Ability: Liquid Ooze  
-Tera Type: Water  
-EVs: 1 HP  
-- Surf  
-- Toxic  
-- Flip Turn  
-- Rapid Spin  
-
-Rhydon @ Expert Belt  
-Ability: Lightning Rod  
-Tera Type: Ground  
-EVs: 1 HP  
+Gyarados  
+Ability: No Ability  
+Level: 50  
+Jolly Nature  
+- Waterfall  
 - Earthquake  
-- Stone Edge  
-- Megahorn  
-- Stealth Rock  
+- Crunch  
+- Taunt  
 
-Vileplume @ Leftovers  
-Ability: Effect Spore  
-Tera Type: Grass  
-EVs: 1 HP  
+Vileplume  
+Ability: No Ability  
+Level: 50  
+Calm Nature  
 IVs: 0 Atk  
-- Sludge Wave  
-- Giga Drain  
+- Mega Drain  
+- Sludge Bomb  
 - Sleep Powder  
-- Leech Seed  
+- Toxic  
 
-Hitmonlee (M) @ White Herb  
-Ability: Unburden  
-Tera Type: Fighting  
-EVs: 1 HP  
-- Close Combat  
-- Knock Off  
-- Stone Edge  
+Scyther  
+Ability: No Ability  
+Level: 50  
+Hasty Nature  
+- X-Scissor  
+- Air Slash  
+- Brick Break  
 - Swords Dance  
+
+Rhydon  
+Ability: No Ability  
+Level: 50  
+Impish Nature  
+- Earthquake  
+- Rock Slide  
+- Thunder Punch  
+- Ice Punch  
+
+Snorlax  
+Ability: No Ability  
+Level: 50  
+Careful Nature  
+- Body Slam  
+- Earthquake  
+- Thunder Punch  
+- Crunch  
 

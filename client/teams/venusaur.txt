@@ -1,54 +1,56 @@
-Venusaur @ Life Orb  
-Ability: Chlorophyll  
-Tera Type: Grass  
-EVs: 1 HP  
-IVs: 0 Atk  
-- Earth Power  
-- Sludge Bomb  
-- Energy Ball  
-- Synthesis  
+Arcanine  
+Ability: No Ability  
+Level: 50  
+Hasty Nature  
+- Flare Blitz  
+- Superpower  
+- Flamethrower  
+- Crunch  
 
-Ninetales @ Heat Rock  
-Ability: Drought  
-Tera Type: Fire  
-EVs: 1 HP  
-IVs: 0 Atk  
-- Fire Blast  
-- Scorching Sands  
-- Solar Beam  
-- Nasty Plot  
-
-Golem @ Expert Belt  
-Ability: Sturdy  
-Tera Type: Rock  
-EVs: 1 HP  
-- Stealth Rock  
-- Stone Edge  
+Gyarados  
+Ability: No Ability  
+Level: 50  
+Happiness: 70  
+Jolly Nature  
+- Waterfall  
 - Earthquake  
+- Crunch  
+- Taunt  
+
+Venusaur-Mega @ Venusaurite  
+Ability: No Ability  
+Level: 50  
+Quiet Nature  
+- Power Whip  
+- Mega Drain  
+- Sludge Bomb  
+- Sleep Powder  
+
+Gengar  
+Ability: No Ability  
+Level: 50  
+Modest Nature  
+IVs: 0 Atk  
+- Shadow Ball  
+- Sludge Bomb  
+- Psychic  
+- Thunderbolt  
+
+Golem  
+Ability: No Ability  
+Level: 50  
+Adamant Nature  
+- Earthquake  
+- Rock Slide  
+- Double-Edge  
 - Explosion  
 
-Vaporeon @ Leftovers  
-Ability: Water Absorb  
-Tera Type: Water  
-EVs: 1 HP  
-- Scald  
-- Flip Turn  
-- Wish  
-- Protect  
-
-Victreebel @ Life Orb  
-Ability: Chlorophyll  
-Tera Type: Grass  
-EVs: 1 HP  
-- Power Whip  
-- Poison Jab  
-- Sucker Punch  
-- Swords Dance  
-
-Hitmonchan (M) @ Assault Vest  
-Ability: Iron Fist  
-Tera Type: Fighting  
-EVs: 1 HP  
-- Close Combat  
-- Knock Off  
+Snorlax  
+Ability: No Ability  
+Level: 50  
+Careful Nature  
+- Body Slam  
+- Earthquake  
+- Thunder Punch  
+- Crunch  
 

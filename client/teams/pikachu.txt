@@ -1,56 +1,55 @@
-Pikachu @ Light Ball  
-Ability: Lightning Rod  
-Tera Type: Electric  
-EVs: 1 HP  
-- Fake Out  
-- Volt Tackle  
-- Play Rough  
-- Volt Switch  
+Pikachu-Starter  
+Ability: No Ability  
+Level: 50  
+Mild Nature  
+- Thunderbolt  
+- Floaty Fall  
+- Splishy Splash  
+- Zippy Zap  
 
-Slowbro @ Rocky Helmet  
-Ability: Regenerator  
-Tera Type: Water  
-EVs: 1 HP  
-IVs: 0 Atk  
-- Scald  
-- Future Sight  
-- Slack Off  
-- Thunder Wave  
-
-Scyther @ Heavy-Duty Boots  
-Ability: Technician  
-Tera Type: Bug  
-EVs: 1 HP  
-- Close Combat  
-- Dual Wingbeat  
-- Defog  
-- U-turn  
-
-Flareon @ Toxic Orb  
-Ability: Guts  
-Tera Type: Fire  
-EVs: 1 HP  
-- Facade  
-- Quick Attack  
+Flareon  
+Ability: No Ability  
+Level: 50  
+Lonely Nature  
 - Flare Blitz  
-- Trailblaze  
+- Flamethrower  
+- Superpower  
+- Double-Edge  
 
-Snorlax @ Leftovers  
-Ability: Immunity  
-Tera Type: Normal  
-EVs: 1 HP  
-- Body Slam  
-- Curse  
-- Rest  
-- Sleep Talk  
-
-Venomoth @ Life Orb  
-Ability: Tinted Lens  
-Tera Type: Bug  
-EVs: 1 HP  
+Vaporeon  
+Ability: No Ability  
+Level: 50  
+Calm Nature  
 IVs: 0 Atk  
-- Bug Buzz  
-- Sludge Wave  
-- Sleep Powder  
-- Quiver Dance  
+- Hydro Pump  
+- Scald  
+- Ice Beam  
+- Yawn  
+
+Jolteon  
+Ability: No Ability  
+Level: 50  
+Mild Nature  
+- Thunder  
+- Thunderbolt  
+- Shadow Ball  
+- Quick Attack  
+
+Golem  
+Ability: No Ability  
+Level: 50  
+Adamant Nature  
+- Earthquake  
+- Rock Slide  
+- Double-Edge  
+- Explosion  
+
+Tauros
+Ability: No Ability  
+Level: 50  
+Jolly Nature  
+- Double-Edge  
+- Earthquake  
+- Rock Slide  
+- Facade  
 
