@@ -10,14 +10,13 @@ Hasty Nature
 Gyarados  
 Ability: No Ability  
 Level: 50  
-Happiness: 70  
 Jolly Nature  
 - Waterfall  
 - Earthquake  
 - Crunch  
 - Taunt  
 
-Venusaur-Mega @ Venusaurite  
+Venusaur-Mega
 Ability: No Ability  
 Level: 50  
 Quiet Nature  
@@ -30,7 +29,6 @@ Gengar
 Ability: No Ability  
 Level: 50  
 Modest Nature  
-IVs: 0 Atk  
 - Shadow Ball  
 - Sludge Bomb  
 - Psychic  
@@ -48,7 +46,7 @@ Adamant Nature
 Snorlax  
 Ability: No Ability  
 Level: 50  
-Careful Nature  
+Brave Nature  
 - Body Slam  
 - Earthquake  
 - Thunder Punch  

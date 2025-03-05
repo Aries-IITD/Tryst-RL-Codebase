@@ -7,7 +7,7 @@ Hasty Nature
 - Flamethrower  
 - Crunch  
 
-Blastoise-Mega @ Blastoisinite  
+Blastoise-Mega
 Ability: No Ability  
 Level: 50  
 Quiet Nature  
@@ -20,7 +20,6 @@ Vileplume
 Ability: No Ability  
 Level: 50  
 Calm Nature  
-IVs: 0 Atk  
 - Mega Drain  
 - Sludge Bomb  
 - Sleep Powder  
@@ -30,7 +29,6 @@ Alakazam
 Ability: No Ability  
 Level: 50  
 Timid Nature  
-IVs: 0 Atk  
 - Psychic  
 - Shadow Ball  
 - Taunt  

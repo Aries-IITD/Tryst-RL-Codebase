@@ -1,4 +1,4 @@
-Charizard-Mega-Y @ Charizardite Y  
+Charizard-Mega-Y 
 Ability: No Ability  
 Level: 50  
 Hasty Nature  
@@ -20,20 +20,19 @@ Vileplume
 Ability: No Ability  
 Level: 50  
 Calm Nature  
-IVs: 0 Atk  
 - Mega Drain  
 - Sludge Bomb  
 - Sleep Powder  
 - Toxic  
 
-Scyther  
+Dugtrio  
 Ability: No Ability  
 Level: 50  
-Hasty Nature  
-- X-Scissor  
-- Air Slash  
-- Brick Break  
-- Swords Dance  
+Lonely Nature  
+- Earthquake  
+- Facade  
+- Rock Slide  
+- Scratch 
 
 Rhydon  
 Ability: No Ability  
@@ -47,7 +46,7 @@ Impish Nature
 Snorlax  
 Ability: No Ability  
 Level: 50  
-Careful Nature  
+Brave Nature  
 - Body Slam  
 - Earthquake  
 - Thunder Punch  

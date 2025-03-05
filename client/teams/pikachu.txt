@@ -20,7 +20,6 @@ Vaporeon
 Ability: No Ability  
 Level: 50  
 Calm Nature  
-IVs: 0 Atk  
 - Hydro Pump  
 - Scald  
 - Ice Beam  
