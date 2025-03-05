@@ -1,8 +1,8 @@
 from include import Ply, RPly, CHARIZARD, BLASTOISE, VENUSAUR, PIKACHU, Battle, BattleOrder, TEAMS, valid_move, get_pokemon, calc_damage
+from poke_env.environment.move import Move
 import numpy as np
 import random 
 import math
-
 """
 Use Ply.possible_moves(battle) to get a list of all possible actions that you can take.
 Function valid_move(battle, move) returns True if the chosen move passes basic sanity checks for the current battle.
@@ -38,6 +38,39 @@ Use move.base_power and move.accuracy to find the details of a move
 Use move.current_pp to find the remaining pp for a move.
 You can use compare this value to figure out the move of the opponent on the previous turn.
 """
+"""
+The Ply.possible_moves returns a list of BattleOrder objects.
+Each of them are either:
+object.order is a Move (indicating an attack)
+object.order is a Pokemon (indicating a switch)
+"""
+"""
+The choose_move_strongest(battle) function is given, to give an idea of a basic AI that is (much) better than random.
+It picks the move that is strongest against the current opposite Pokemon.
+How can you improve it?
+It does not use status moves (Sleep Power, Toxic, Taunt, Recover). 
+It does not switch Pokemon or account for enemy switching. 
+It does not account for the enemy Pokemon damage dealt to you.
+It does not account for the enemy Pokemon being faster than you (and possible KOing you first).
+"""
+def choose_move_strongest(battle):
+    all_moves = Ply.possible_moves(battle)
+    max_damages = []
+
+    for move in all_moves:
+        print(move.order, end = " ")
+        if isinstance(move.order, Move):
+            my_pkmn = battle.active_pokemon
+            enem_pkmn = get_pokemon(battle.opponent_active_pokemon)
+            damages = calc_damage(my_pkmn, enem_pkmn)
+            max_damages.append(np.mean(damages[move.order.id]))
+        else:
+            max_damages.append(0)
+
+    print()
+    print("Damage of each choices ", max_damages)
+
+    return all_moves[np.argmax(max_damages)]
 
 class AIPly1(RPly):
     # set team you want to use
@@ -73,14 +106,15 @@ class AIPly1(RPly):
             print(name, move.accuracy, move.base_power, move.type, move.current_pp, end=" ")
         print()
         pkmn = get_pokemon(battle.opponent_active_pokemon)
-        # operate on this object
         print(math.floor(pkmn.stats["hp"] * pkmn.current_hp_fraction), pkmn.current_hp_fraction, pkmn.species, pkmn.types, pkmn.stats)
+        # operate on this object
         damages = calc_damage(battle.active_pokemon, pkmn)
         for name, move in pkmn.moves.items():
             print(name, move.accuracy, move.base_power, move.type, move.current_pp, end=" ")
         print()
         print(damages)
         # Implement this function, currently returns random move
+        # return choose_move_strongest(battle)
         return super().choose_move(battle)
 
 class AIPly2(RPly):
