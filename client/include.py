@@ -48,11 +48,11 @@ for t in TEAMS:
 
 DATA_DICTS = [pkmn_moves, pkmn_natures]
 
-for i in range(len(DATA_DICTS)):
-    DICT = DATA_DICTS[i]
-    DICT['charizard'] = DICT.get('charizardmegay')
-    DICT['blastoise'] = DICT.get('blastoisemega')
-    DICT['venusaur'] = DICT.get('venusaurmega')
+# for i in range(len(DATA_DICTS)):
+#     DICT = DATA_DICTS[i]
+#     DICT['charizard'] = DICT.get('charizardmegay')
+#     DICT['blastoise'] = DICT.get('blastoisemega')
+#     DICT['venusaur'] = DICT.get('venusaurmega')
 
 def get_pokemon(pokemon: Pokemon) -> Pokemon:
     moves = pkmn_moves.get(pokemon.species)
@@ -958,18 +958,18 @@ class BattleOrder:
                 return "/choose move 1"
             
             message = f"/choose move {self.order.id}"
-            if self.mega:
-                message += " mega"
-            if self.megax:
-                message += " megax"
-            if self.megay:
-                message += " megay"
-            elif self.z_move:
-                message += " zmove"
-            elif self.dynamax:
-                message += " dynamax"
-            elif self.terastallize:
-                message += " terastallize"
+            # if self.mega:
+            #     message += " mega"
+            # if self.megax:
+            #     message += " megax"
+            # if self.megay:
+            #     message += " megay"
+            # elif self.z_move:
+            #     message += " zmove"
+            # elif self.dynamax:
+            #     message += " dynamax"
+            # elif self.terastallize:
+            #     message += " terastallize"
 
             if self.move_target != DoubleBattle.EMPTY_TARGET_POSITION:
                 message += f" {self.move_target}"
@@ -1057,20 +1057,20 @@ class Ply(Player):
             [BattleOrder(switch) for switch in battle.available_switches]
         )
 
-        if battle.can_mega_evolve and (battle.active_pokemon.species in ["blastoise", "venusaur"]):
-            available_orders.extend(
-                [BattleOrder(move, mega=True) for move in battle.available_moves]
-            )
+        # if battle.can_mega_evolve and (battle.active_pokemon.species in ["blastoise", "venusaur"]):
+        #     available_orders.extend(
+        #         [BattleOrder(move, mega=True) for move in battle.available_moves]
+        #     )
 
         # if battle.can_mega_evolve_x:
         #     available_orders.extend(
         #         [BattleOrder(move, megax=True) for move in battle.available_moves]
         #     )
         
-        if battle.can_mega_evolve_y  and (battle.active_pokemon.species in "charizard"):
-            available_orders.extend(
-                [BattleOrder(move, megay=True) for move in battle.available_moves]
-            )
+        # if battle.can_mega_evolve_y  and (battle.active_pokemon.species in "charizard"):
+        #     available_orders.extend(
+        #         [BattleOrder(move, megay=True) for move in battle.available_moves]
+        #     )
     
         return available_orders
 
@@ -1166,28 +1166,7 @@ class Ply(Player):
         super().__init__(*args, account_configuration=self._create_account_configuration(code), **kwargs)
 
 def valid_move(battle: AbstractBattle, move: BattleOrder) -> BattleOrder:
-    valid = True
-    nm = move
-    if move.megax:
-        valid = False
-        nm.megax = False
-    if move.mega and (battle.active_pokemon.species not in ["blastoise", "venusaur"]):
-        valid = False
-        nm.mega = False
-    if move.megay and (battle.active_pokemon.species != "charizard"):
-        valid = False
-        nm.megay = False
-    if move.dynamax:
-        valid = False
-        move.dynamax = False
-    if move.terastallize:
-        valid = False
-        move.terastallize = False
-    if move.z_move:
-        valid = False
-        move.z_move = False
-
-    return valid
+    return move in Ply.possible_moves
 
 class RPly(Ply):
     def __init__(self, *args, **kwargs):

@@ -8,9 +8,6 @@ import math
 Use Ply.possible_moves(battle) to get a list of all possible actions that you can take.
 Function valid_move(battle, move) returns True if the chosen move passes basic sanity checks for the current battle.
 Still, try to make sure your chosen move is in the possible moves returned by Ply.possible_moves.
-I recommend setting mega=True for the first attack involving Charizard, Blastoise or Venusaur.
-Or, use Ply.create_order(order=Move/Pokemon, mega=True/False, megay=True/False)
-megay = True to mega-evolve Charizard, mega = True to mega-evolve Blastoise/Venusaur
 order = Pokemon to switch, or move to use
 """
 """
@@ -80,11 +77,6 @@ def choose_move_strongest(battle):
     # print("Damage of each choices ", max_damages)
 
     best_move = all_moves[np.argmax(max_damages)]
-    new_best_move = best_move
-    if battle.can_mega_evolve: 
-        new_best_move.mega = True
-        if valid_move(battle, new_best_move): return new_best_move
-    if battle.can_mega_evolve_y: best_move.megay = True
     return best_move
 
 class AIPly1(RPly):
@@ -130,7 +122,7 @@ class AIPly1(RPly):
         print()
         print(damages)
         '''
-        # Implement this function, currently returns random move
+        # Implement this function, currently returns strongest move
         return choose_move_strongest(battle)
         return super().choose_move(battle)
 
@@ -145,7 +137,7 @@ class AIPly2(RPly):
     # define teampreview function
 
     def choose_move(self, battle):
-        # Implement this function, currently returns random move
+        # Implement this function, currently returns strongest move
         return choose_move_strongest(battle)
         return super().choose_move(battle)
 
@@ -160,7 +152,7 @@ class AIPly3(RPly):
     # define teampreview function
 
     def choose_move(self, battle):
-        # Implement this function, currently returns random move
+        # Implement this function, currently returns strongest move
         return choose_move_strongest(battle)
         return super().choose_move(battle)
 
@@ -175,6 +167,6 @@ class AIPly4(RPly):
     # define teampreview function
 
     def choose_move(self, battle):
-        # Implement this function, currently returns random move
+        # Implement this function, currently returns strongest move
         return choose_move_strongest(battle)
         return super().choose_move(battle)
