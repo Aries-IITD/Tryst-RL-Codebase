@@ -1,7 +1,7 @@
 Arcanine  
 Ability: No Ability  
 Level: 50  
-Hasty Nature  
+Adamant Nature  
 - Flare Blitz  
 - Superpower  
 - Flamethrower  
@@ -10,11 +10,11 @@ Hasty Nature
 Blastoise-Mega
 Ability: No Ability  
 Level: 50  
-Quiet Nature  
+Modest Nature  
 - Hydro Pump  
 - Surf  
 - Ice Beam  
-- Aqua Jet  
+- Dark Pulse  
 
 Vileplume  
 Ability: No Ability  
@@ -51,4 +51,3 @@ Jolly Nature
 - Earthquake  
 - Rock Slide  
 - Facade  
-

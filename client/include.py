@@ -2,20 +2,21 @@ from poke_env.player.player import Player
 from dataclasses import dataclass
 from logging import Logger
 from typing import Any, Dict, List, Union, Optional
-from poke_env.environment import AbstractBattle, Battle
-from poke_env.environment.move import Move
-from poke_env.environment.pokemon_type import PokemonType
 from poke_env import AccountConfiguration
 from poke_env.ps_client.account_configuration import CONFIGURATION_FROM_PLAYER_COUNTER
 from poke_env.data import GenData, to_id_str
+from poke_env.environment import AbstractBattle, Battle
+from poke_env.environment.move import Move
+from poke_env.environment.pokemon_type import PokemonType
+from poke_env.environment.double_battle import DoubleBattle
 from poke_env.environment.observation import Observation
 from poke_env.environment.observed_pokemon import ObservedPokemon
-from poke_env.environment.double_battle import DoubleBattle
 from poke_env.environment.pokemon import Pokemon
-from poke_env.exceptions import ShowdownException
-from poke_env.teambuilder.constant_teambuilder import ConstantTeambuilder
 from poke_env.environment.weather import Weather
 from poke_env.environment.move_category import MoveCategory
+from poke_env.environment.status import Status
+from poke_env.exceptions import ShowdownException
+from poke_env.teambuilder.constant_teambuilder import ConstantTeambuilder
 import re
 import math
 import orjson
@@ -70,7 +71,9 @@ def get_pokemon(pokemon: Pokemon) -> Pokemon:
                 boost = (2 + boosts[stat]) / 2
             else:
                 boost = 2 / (2 - boosts[stat])
-            pokemon._stats[stat] = math.floor(math.floor(math.floor((base_stat + 20) * natures[pkmn_natures[pokemon.species]][stat]) * 1.02) * boost)
+            pokemon._stats[stat] = math.floor(math.floor(math.floor((base_stat + 20) * natures.get(pkmn_natures[pokemon.species], "serious")[stat]) * 1.02) * boost)
+            if ((stat == "atk") and (pokemon.status == Status.BRN)) or ((stat == "spe") and (pokemon.status == Status.PAR)):
+                pokemon._stats[stat] = math.floor(pokemon._stats[stat] * 0.5)
 
     return pokemon
 
@@ -81,9 +84,19 @@ def calc_damage(attacker: Pokemon, defender: Pokemon, is_crit=False):
         if move.category == MoveCategory.PHYSICAL:
             A = attacker.stats["atk"]
             D = defender.stats["def"]
+            if is_crit:
+                if attacker.boosts["atk"] < 0:
+                    A = math.floor(A * (2 - attacker.boosts["atk"]) / 2)
+                if defender.boosts["def"] > 0:
+                    D = math.floor(D * 2 / (2 + defender.boosts["def"]))
         elif move.category == MoveCategory.SPECIAL:
             A = attacker.stats["spa"]
             D = defender.stats["spd"]
+            if is_crit:
+                if attacker.boosts["spa"] < 0:
+                    A = math.floor(A * (2 - attacker.boosts["spa"]) / 2)
+                if defender.boosts["spd"] > 0:
+                    D = math.floor(D * 2 / (2 + defender.boosts["spd"]))
         else:
             dmg_dict[move.id] = [0] * 16
             continue

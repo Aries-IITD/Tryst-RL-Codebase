@@ -1,4 +1,4 @@
-export const MovesText: { [id: IDEntry]: MoveText } = {
+export const MovesText: {[id: IDEntry]: MoveText} = {
 	"10000000voltthunderbolt": {
 		name: "10,000,000 Volt Thunderbolt",
 		desc: "Has a very high chance for a critical hit.",
@@ -589,10 +589,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	bodyslam: {
 		name: "Body Slam",
-		desc: "Has a 30% chance to paralyze the target. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
-		shortDesc: "30% chance to paralyze the target.",
+		desc: "Damage doubles and no accuracy check is done if the target has used Minimize while active.",
+		shortDesc: "No additional effect.",
 		gen5: {
-			desc: "Has a 30% chance to paralyze the target.",
+			desc: "No additional effect.",
 		},
 	},
 	boltbeak: {
@@ -1198,8 +1198,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	crunch: {
 		name: "Crunch",
-		desc: "Has a 20% chance to lower the target's Defense by 1 stage.",
-		shortDesc: "20% chance to lower the target's Defense by 1.",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
 		gen3: {
 			desc: "Has a 20% chance to lower the target's Special Defense by 1 stage.",
 			shortDesc: "20% chance to lower the target's Sp. Def by 1.",
@@ -1998,8 +1998,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	fireblast: {
 		name: "Fire Blast",
-		desc: "Has a 10% chance to burn the target.",
-		shortDesc: "10% chance to burn the target.",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
 		gen1: {
 			desc: "Has a 30% chance to burn the target.",
 			shortDesc: "30% chance to burn the target.",
@@ -2030,8 +2030,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	firepunch: {
 		name: "Fire Punch",
-		desc: "Has a 10% chance to burn the target.",
-		shortDesc: "10% chance to burn the target.",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
 	},
 	firespin: {
 		name: "Fire Spin",
@@ -2119,13 +2119,13 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	flamethrower: {
 		name: "Flamethrower",
-		desc: "Has a 10% chance to burn the target.",
-		shortDesc: "10% chance to burn the target.",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
 	},
 	flareblitz: {
 		name: "Flare Blitz",
-		desc: "Has a 10% chance to burn the target. If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
-		shortDesc: "Has 33% recoil. 10% chance to burn. Thaws user.",
+		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 33% recoil. Thaws user.",
 		gen4: {
 			desc: "Has a 10% chance to burn the target. If the target lost HP, the user takes recoil damage equal to 1/3 the HP lost by the target, rounded down, but not less than 1 HP.",
 			shortDesc: "Has 1/3 recoil. 10% chance to burn. Thaws user.",
@@ -3218,8 +3218,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	icebeam: {
 		name: "Ice Beam",
-		desc: "Has a 10% chance to freeze the target.",
-		shortDesc: "10% chance to freeze the target.",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
 	},
 	iceburn: {
 		name: "Ice Burn",
@@ -3240,8 +3240,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	icepunch: {
 		name: "Ice Punch",
-		desc: "Has a 10% chance to freeze the target.",
-		shortDesc: "10% chance to freeze the target.",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
 	},
 	iceshard: {
 		name: "Ice Shard",
@@ -5929,8 +5929,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	sludgebomb: {
 		name: "Sludge Bomb",
-		desc: "Has a 30% chance to poison the target.",
-		shortDesc: "30% chance to poison the target.",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
 	},
 	sludgewave: {
 		name: "Sludge Wave",
@@ -6254,8 +6254,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	splishysplash: {
 		name: "Splishy Splash",
-		desc: "Has a 30% chance to paralyze the target.",
-		shortDesc: "30% chance to paralyze the target.",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
 	},
 	spore: {
 		name: "Spore",
@@ -6909,10 +6909,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	thunder: {
 		name: "Thunder",
-		desc: "Has a 30% chance to paralyze the target. This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If the weather is Desolate Land or Sunny Day, this move's accuracy is 50%. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 70%.",
-		shortDesc: "30% chance to paralyze. Can't miss in rain.",
+		desc: "This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If the weather is Desolate Land or Sunny Day, this move's accuracy is 50%. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 70%.",
+		shortDesc: "Can't miss in rain.",
 		gen7: {
-			desc: "Has a 30% chance to paralyze the target. This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If the weather is Desolate Land or Sunny Day, this move's accuracy is 50%.",
+			desc: "This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If the weather is Desolate Land or Sunny Day, this move's accuracy is 50%.",
 		},
 		gen5: {
 			desc: "Has a 30% chance to paralyze the target. This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Rain Dance, this move does not check accuracy. If the weather is Sunny Day, this move's accuracy is 50%.",
@@ -6930,8 +6930,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	thunderbolt: {
 		name: "Thunderbolt",
-		desc: "Has a 10% chance to paralyze the target.",
-		shortDesc: "10% chance to paralyze the target.",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
 	},
 	thundercage: {
 		name: "Thunder Cage",
@@ -6960,8 +6960,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	thunderpunch: {
 		name: "Thunder Punch",
-		desc: "Has a 10% chance to paralyze the target.",
-		shortDesc: "10% chance to paralyze the target.",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
 	},
 	thundershock: {
 		name: "Thunder Shock",
@@ -6980,7 +6980,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	tidyup: {
 		name: "Tidy Up",
-		desc: "Raises the user's Attack and Speed by 1 stage. Removes substitutes from all active Pokemon and ends the effects of Spikes, Stealth Rock, Sticky Web, and Toxic Spikes for both sides.",
+		desc: "Raises the user's Attack and Speed by 1 stage. Removes subtitutes from all active Pokemon and ends the effects of Spikes, Stealth Rock, Sticky Web, and Toxic Spikes for both sides.",
 		shortDesc: "User +1 Atk, Spe. Clears all substitutes/hazards.",
 
 		activate: "  Tidying up complete!",
@@ -7579,7 +7579,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	zippyzap: {
 		name: "Zippy Zap",
 		desc: "Has a 100% chance to raise the user's evasion by 1 stage.",
-		shortDesc: "Goes first. Raises user's evasion by 1.",
+		shortDesc: "Goes first.",
 		gen7: {
 			desc: "Will always result in a critical hit.",
 			shortDesc: "Nearly always goes first. Always crits.",

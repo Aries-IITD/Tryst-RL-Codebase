@@ -1,7 +1,7 @@
 Arcanine  
 Ability: No Ability  
 Level: 50  
-Hasty Nature  
+Adamant Nature  
 - Flare Blitz  
 - Superpower  
 - Flamethrower  
@@ -25,14 +25,14 @@ Quiet Nature
 - Sludge Bomb  
 - Sleep Powder  
 
-Gengar  
+Dugtrio  
 Ability: No Ability  
 Level: 50  
-Modest Nature  
-- Shadow Ball  
-- Sludge Bomb  
-- Psychic  
-- Thunderbolt  
+Adamant Nature  
+- Earthquake  
+- Rock Slide  
+- Scratch  
+- Facade
 
 Golem  
 Ability: No Ability  
@@ -41,7 +41,7 @@ Adamant Nature
 - Earthquake  
 - Rock Slide  
 - Double-Edge  
-- Explosion  
+- Fire Punch  
 
 Snorlax  
 Ability: No Ability  

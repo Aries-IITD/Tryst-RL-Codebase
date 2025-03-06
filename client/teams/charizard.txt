@@ -25,14 +25,14 @@ Calm Nature
 - Sleep Powder  
 - Toxic  
 
-Dugtrio  
+Gengar  
 Ability: No Ability  
 Level: 50  
-Lonely Nature  
-- Earthquake  
-- Facade  
-- Rock Slide  
-- Scratch 
+Modest Nature  
+- Shadow Ball  
+- Sludge Bomb  
+- Psychic  
+- Thunderbolt  
 
 Rhydon  
 Ability: No Ability  
