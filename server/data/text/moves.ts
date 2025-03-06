@@ -96,8 +96,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	airslash: {
 		name: "Air Slash",
-		desc: "Has a 30% chance to make the target flinch.",
-		shortDesc: "30% chance to make the target flinch.",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
 	},
 	alloutpummeling: {
 		name: "All-Out Pummeling",
@@ -1243,8 +1243,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	darkpulse: {
 		name: "Dark Pulse",
-		desc: "Has a 20% chance to make the target flinch.",
-		shortDesc: "20% chance to make the target flinch.",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
 	},
 	darkvoid: {
 		name: "Dark Void",
@@ -2170,8 +2170,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	floatyfall: {
 		name: "Floaty Fall",
-		desc: "Has a 30% chance to make the target flinch.",
-		shortDesc: "30% chance to make the target flinch.",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
 	},
 	floralhealing: {
 		name: "Floral Healing",
@@ -5333,8 +5333,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	rockslide: {
 		name: "Rock Slide",
-		desc: "Has a 30% chance to make the target flinch.",
-		shortDesc: "30% chance to make the foe(s) flinch.",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
 		gen1: {
 			desc: "No additional effect.",
 			shortDesc: "No additional effect.",

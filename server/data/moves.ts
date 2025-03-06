@@ -261,15 +261,15 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	airslash: {
 		num: 403,
-		accuracy: 95,
-		basePower: 75,
+		accuracy: 100,
+		basePower: 85,
 		category: "Special",
 		name: "Air Slash",
 		pp: 15,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, distance: 1, metronome: 1, slicing: 1},
 		secondary: {
-			chance: 30,
+			chance: 0,
 			volatileStatus: 'flinch',
 		},
 		target: "any",
@@ -3450,7 +3450,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1, distance: 1, metronome: 1, pulse: 1},
 		secondary: {
-			chance: 20,
+			chance: 0,
 			volatileStatus: 'flinch',
 		},
 		target: "any",
@@ -6005,7 +6005,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, gravity: 1},
 		secondary: {
-			chance: 30,
+			chance: 0,
 			volatileStatus: 'flinch',
 		},
 		target: "normal",
@@ -15781,8 +15781,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	rockslide: {
 		num: 157,
-		accuracy: 90,
-		basePower: 75,
+		accuracy: 100,
+		basePower: 85,
 		category: "Physical",
 		name: "Rock Slide",
 		pp: 10,
