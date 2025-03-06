@@ -1,5 +1,6 @@
 from include import Ply, RPly, CHARIZARD, BLASTOISE, VENUSAUR, PIKACHU, Battle, BattleOrder, TEAMS, valid_move, get_pokemon, calc_damage
 from poke_env.environment.move import Move
+from poke_env.environment.pokemon import Pokemon
 from poke_env.environment.status import Status
 import numpy as np
 import random 
@@ -70,11 +71,16 @@ def choose_move_strongest(battle):
         # print(move.order, end = " ")
         if isinstance(move.order, Move):
             max_damages.append(np.mean(damages[move.order.id]))
+        elif isinstance(move.order, Pokemon) and my_pkmn.status == Status.FNT:
+            # select next Pokemon to send out, when current Pokemon has fainted
+                # next_damages = calc_damage(move.order, enem_pkmn)
+                # max_damages.append(max([np.mean(x) for x in next_damages.values()]))
+            max_damages.append(0)
         else:
             max_damages.append(0)
 
     # print()
-    # print("Damage of each choices ", max_damages)
+    # print("Damage of each choice ", max_damages)
 
     best_move = all_moves[np.argmax(max_damages)]
     return best_move
@@ -110,6 +116,7 @@ class AIPly1(RPly):
         my_pkmn = battle.active_pokemon
         pkmn = get_pokemon(battle.opponent_active_pokemon)
         damages = calc_damage(battle.active_pokemon, pkmn)
+        # see below for how to collect some important data
         '''
         print(my_pkmn.current_hp, my_pkmn.current_hp_fraction, my_pkmn.species, my_pkmn.types, my_pkmn.stats)
         for name, move in my_pkmn.moves.items():
@@ -122,9 +129,10 @@ class AIPly1(RPly):
         print()
         print(damages)
         '''
-        # Implement this function, currently returns strongest move
+        # Implement function here, currently returns strongest move
         return choose_move_strongest(battle)
-        return super().choose_move(battle)
+        # old default
+        return super().choose_move(battle) # random move
 
 class AIPly2(RPly):
     # set team you want to use
@@ -137,9 +145,10 @@ class AIPly2(RPly):
     # define teampreview function
 
     def choose_move(self, battle):
-        # Implement this function, currently returns strongest move
+        # Implement function here, currently returns strongest move
         return choose_move_strongest(battle)
-        return super().choose_move(battle)
+        # old default
+        return super().choose_move(battle) # random move
 
 class AIPly3(RPly):
     # set team you want to use
@@ -152,9 +161,10 @@ class AIPly3(RPly):
     # define teampreview function
 
     def choose_move(self, battle):
-        # Implement this function, currently returns strongest move
+        # Implement function here, currently returns strongest move
         return choose_move_strongest(battle)
-        return super().choose_move(battle)
+        # old default
+        return super().choose_move(battle) # random move
 
 class AIPly4(RPly):
     # set team you want to use
@@ -167,6 +177,7 @@ class AIPly4(RPly):
     # define teampreview function
 
     def choose_move(self, battle):
-        # Implement this function, currently returns strongest move
+        # Implement function here, currently returns strongest move
         return choose_move_strongest(battle)
-        return super().choose_move(battle)
+        # old default
+        return super().choose_move(battle) # random move
