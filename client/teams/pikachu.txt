@@ -1,7 +1,7 @@
 Pikachu-Starter  
 Ability: No Ability  
 Level: 50  
-Mild Nature  
+Lonely Nature  
 - Thunderbolt  
 - Floaty Fall  
 - Splishy Splash  
@@ -43,7 +43,7 @@ Adamant Nature
 - Double-Edge  
 - Fire Punch  
 
-Tauros
+Tauros  
 Ability: No Ability  
 Level: 50  
 Jolly Nature  
