@@ -760,7 +760,7 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 		},
 		ruleset: [
 			'Timer Starting = 15', 'Timer Grace = 30',
-			'Timer Add Per Turn = 5', 'Timer Max Per Turn = 15', 'Timer Max First Turn = 40',
+			'Timer Add Per Turn = 5', 'Timer Max Per Turn = 15', 'Timer Max First Turn = 30',
 		],
 	},
 	vgctimer: {
