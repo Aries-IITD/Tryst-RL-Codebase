@@ -77,10 +77,9 @@ async def main(log=False):
     if mode == 'ladder':
         await player1.ladder(num_battles)
 
-    # Print the rating of the player and its opponent after each battle
     if log:
-        for battle_tag, battle in player1.battles.items():
-            print(battle_tag, battle.won)
+        # for battle_tag, battle in player1.battles.items():
+        #     print(battle_tag, battle.won)
 
         print(sum([x.won for x in player1.battles.values() if x is not None]) / len(player1.battles))
 
