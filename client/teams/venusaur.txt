@@ -10,7 +10,7 @@ Adamant Nature
 Gyarados  
 Ability: No Ability  
 Level: 50  
-Jolly Nature  
+Adamant Nature  
 - Waterfall  
 - Earthquake  
 - Crunch  

@@ -4,13 +4,13 @@ Level: 50
 Hasty Nature  
 - Fire Blast  
 - Flamethrower  
-- Air Slash  
+- Thunder Punch  
 - Earthquake  
 
 Gyarados  
 Ability: No Ability  
 Level: 50  
-Jolly Nature  
+Adamant Nature  
 - Waterfall  
 - Earthquake  
 - Crunch  
@@ -43,12 +43,13 @@ Impish Nature
 - Thunder Punch  
 - Ice Punch  
 
-Snorlax  
+Tauros  
 Ability: No Ability  
 Level: 50  
-Brave Nature  
-- Body Slam  
+Jolly Nature  
+- Double-Edge  
 - Earthquake  
-- Thunder Punch  
-- Crunch  
+- Rock Slide  
+- Facade  
 
+git

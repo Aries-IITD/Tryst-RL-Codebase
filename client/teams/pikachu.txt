@@ -19,7 +19,7 @@ Adamant Nature
 Gyarados  
 Ability: No Ability  
 Level: 50  
-Jolly Nature  
+Adamant Nature  
 - Waterfall  
 - Earthquake  
 - Crunch  
@@ -43,12 +43,12 @@ Adamant Nature
 - Double-Edge  
 - Fire Punch  
 
-Tauros  
+Snorlax  
 Ability: No Ability  
 Level: 50  
-Jolly Nature  
-- Double-Edge  
+Brave Nature  
+- Body Slam  
 - Earthquake  
-- Rock Slide  
-- Facade  
+- Thunder Punch  
+- Crunch  
 
