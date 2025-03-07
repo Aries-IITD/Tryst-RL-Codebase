@@ -5,6 +5,7 @@ git clone https://github.com/Aries-IITD/Tryst-RL-Codebase.git server
 ```
 
 You also need to have Node.js installed [many online guides exist for this]. Remember to add it to PATH.
+Also, Python3 (preferably the latest version) is required.
 
 ```
 ./pokemon-showdown 7850 --no-security
@@ -31,6 +32,9 @@ TheAbry,~
 Then when you log in as this username you will be able to see all battles taking place on your server.
 
 For the bot client, in the `client` folder create a venv and install all dependencies from `requirements.txt`.
+```
+pip install -r requirements.txt
+```
 Put the port number for your server in the link in `client/env.txt`. Change the second line to your assigned code.
 You can run 
 ```
@@ -39,6 +43,7 @@ python3 driver.py -h
 to check all the command line arguments. You can change the mode to battle against one of your AIs, or to wait on the ladder for battles.
 We have given 5 options for AIs: random, ai1, ai2, ai3, ai4. Random is pre-implemented, while ai1-ai4 can be implemented in `ai.py`.
 
+If you get an error for no module `poke_env`, try pip installing it separately using `pip install poke_env` or upgrading your pip then repeating the pip install steps again.
 If you get an error in running the driver.py after a crash, restart the server.
 
 
