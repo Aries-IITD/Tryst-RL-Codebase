@@ -4392,7 +4392,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 7 Let's Go] OU",
 		mod: 'gen7letsgo',
-		ruleset: ['Standard', 'Blitz'],
+		ruleset: ['Standard'],
 		banlist: ['Uber'],
 	},
 ];
