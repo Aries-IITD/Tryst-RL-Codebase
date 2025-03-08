@@ -38,7 +38,7 @@ pip install -r requirements.txt
 Put the port number for your server in the link in `client/env.txt`. Change the second line to your assigned code.
 You can run 
 ```
-python3 driver.py -h
+python driver.py -h
 ```
 to check all the command line arguments. You can change the mode to battle against one of your AIs, or to wait on the ladder for battles.
 We have given 5 options for AIs: random, ai1, ai2, ai3, ai4. Random is pre-implemented, while ai1-ai4 can be implemented in `ai.py`.
