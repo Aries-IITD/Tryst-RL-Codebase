@@ -1166,7 +1166,7 @@ class Ply(Player):
         super().__init__(*args, account_configuration=self._create_account_configuration(code), **kwargs)
 
 def valid_move(battle: AbstractBattle, move: BattleOrder) -> BattleOrder:
-    return move in Ply.possible_moves()
+    return move in Ply.possible_moves(battle)
 
 class RPly(Ply):
     def __init__(self, *args, **kwargs):
