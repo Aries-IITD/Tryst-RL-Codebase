@@ -35,6 +35,8 @@ For the bot client, in the `client` folder create a venv and install all depende
 ```
 pip install -r requirements.txt
 ```
+Even if the pip install raises an error, you can try running the next steps and installing required modules independently if it raises an error.
+
 Put the port number for your server in the link in `client/env.txt`. Change the second line to your assigned code.
 You can run 
 ```
