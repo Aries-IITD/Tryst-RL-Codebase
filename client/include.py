@@ -15,6 +15,7 @@ from poke_env.environment.pokemon import Pokemon
 from poke_env.environment.weather import Weather
 from poke_env.environment.move_category import MoveCategory
 from poke_env.environment.status import Status
+from poke_env.environment.effect import Effect
 from poke_env.exceptions import ShowdownException
 from poke_env.teambuilder.constant_teambuilder import ConstantTeambuilder
 import re

@@ -36,6 +36,7 @@ instead just use the method described above to track the hp.
 Use pokemon.status_counter to find the turn count for sleep / toxic.
 Use pokemon.status to find the status of a Pokemon 
 (Status.SLP = sleeping, Status.TOX = toxic poison)
+Use pokemon.effects to get a dict of active effects on a Pokemon, eg Effect.TAUNT
 """
 """
 Use move.type to find the type of a move
