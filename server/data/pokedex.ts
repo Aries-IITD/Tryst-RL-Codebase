@@ -754,7 +754,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseSpecies: "Pikachu",
 		forme: "Starter",
 		types: ["Electric"],
-		baseStats: {hp: 60, atk: 95, def: 60, spa: 90, spd: 60, spe: 121},
+		baseStats: {hp: 60, atk: 95, def: 60, spa: 90, spd: 60, spe: 119},
 		abilities: {0: "Static", H: "Lightning Rod"},
 		heightm: 0.4,
 		weightkg: 6,

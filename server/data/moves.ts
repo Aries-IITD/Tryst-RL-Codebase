@@ -2051,7 +2051,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	bulletpunch: {
 		num: 418,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 50,
 		category: "Physical",
 		name: "Bullet Punch",
 		pp: 30,

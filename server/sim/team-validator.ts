@@ -724,43 +724,44 @@ export class TeamValidator {
 		if (ruleTable.has('obtainableabilities')) {
 			if (dex.gen <= 2 || dex.currentMod === 'gen7letsgo') {
 				set.ability = 'No Ability';
-			} else {
-				if (!ability.name || ability.name === 'No Ability') {
-					problems.push(`${name} needs to have an ability.`);
-				} else if (!Object.values(species.abilities).includes(ability.name)) {
-					if (tierSpecies.abilities[0] === ability.name) {
-						set.ability = species.abilities[0];
-					} else {
-						problems.push(`${name} can't have ${set.ability}.`);
-					}
-				}
-				if (ability.name === species.abilities['H']) {
-					setSources.isHidden = true;
+			} 
+			// else {
+			// 	if (!ability.name || ability.name === 'No Ability') {
+			// 		problems.push(`${name} needs to have an ability.`);
+			// 	} else if (!Object.values(species.abilities).includes(ability.name)) {
+			// 		if (tierSpecies.abilities[0] === ability.name) {
+			// 			set.ability = species.abilities[0];
+			// 		} else {
+			// 			problems.push(`${name} can't have ${set.ability}.`);
+			// 		}
+			// 	}
+			// 	if (ability.name === species.abilities['H']) {
+			// 		setSources.isHidden = true;
 
-					let unreleasedHidden = species.unreleasedHidden;
-					if (unreleasedHidden === 'Past' && this.minSourceGen < dex.gen) unreleasedHidden = false;
+			// 		let unreleasedHidden = species.unreleasedHidden;
+			// 		if (unreleasedHidden === 'Past' && this.minSourceGen < dex.gen) unreleasedHidden = false;
 
-					if (unreleasedHidden && ruleTable.has('-unreleased')) {
-						problems.push(`${name}'s Hidden Ability is unreleased.`);
-					} else if (dex.gen === 7 && ['entei', 'suicune', 'raikou'].includes(species.id) && this.minSourceGen > 1) {
-						problems.push(`${name}'s Hidden Ability is only available from Virtual Console, which is not allowed in this format.`);
-					} else if (dex.gen === 6 && ability.name === 'Symbiosis' &&
-						(set.species.endsWith('Orange') || set.species.endsWith('White'))) {
-						problems.push(`${name}'s Hidden Ability is unreleased for the Orange and White forms.`);
-					} else if (dex.gen === 5 && set.level < 10 && (species.maleOnlyHidden || species.gender === 'N')) {
-						problems.push(`${name} must be at least level 10 to have a Hidden Ability.`);
-					}
-					if (species.maleOnlyHidden) {
-						if (set.gender && set.gender !== 'M') {
-							problems.push(`${name} must be male to have a Hidden Ability.`);
-						}
-						set.gender = 'M';
-						setSources.sources = ['5D'];
-					}
-				} else {
-					setSources.isHidden = false;
-				}
-			}
+			// 		if (unreleasedHidden && ruleTable.has('-unreleased')) {
+			// 			problems.push(`${name}'s Hidden Ability is unreleased.`);
+			// 		} else if (dex.gen === 7 && ['entei', 'suicune', 'raikou'].includes(species.id) && this.minSourceGen > 1) {
+			// 			problems.push(`${name}'s Hidden Ability is only available from Virtual Console, which is not allowed in this format.`);
+			// 		} else if (dex.gen === 6 && ability.name === 'Symbiosis' &&
+			// 			(set.species.endsWith('Orange') || set.species.endsWith('White'))) {
+			// 			problems.push(`${name}'s Hidden Ability is unreleased for the Orange and White forms.`);
+			// 		} else if (dex.gen === 5 && set.level < 10 && (species.maleOnlyHidden || species.gender === 'N')) {
+			// 			problems.push(`${name} must be at least level 10 to have a Hidden Ability.`);
+			// 		}
+			// 		if (species.maleOnlyHidden) {
+			// 			if (set.gender && set.gender !== 'M') {
+			// 				problems.push(`${name} must be male to have a Hidden Ability.`);
+			// 			}
+			// 			set.gender = 'M';
+			// 			setSources.sources = ['5D'];
+			// 		}
+			// 	} else {
+			// 		setSources.isHidden = false;
+			// 	}
+			// }
 		}
 
 		ability = dex.abilities.get(set.ability);
@@ -1591,12 +1592,12 @@ export class TeamValidator {
 				// Darmanitan-Zen
 				problems.push(`${species.name} transforms in-battle with ${species.requiredAbility}, please fix its ability.`);
 			}
-			if (species.requiredItems) {
-				if (!species.requiredItems.includes(item.name)) {
-					// Mega or Primal
-					problems.push(`${species.name} transforms in-battle with ${species.requiredItem}, please fix its item.`);
-				}
-			}
+			// if (species.requiredItems) {
+			// 	if (!species.requiredItems.includes(item.name)) {
+			// 		// Mega or Primal
+			// 		problems.push(`${species.name} transforms in-battle with ${species.requiredItem}, please fix its item.`);
+			// 	}
+			// }
 			if (species.requiredMove && !set.moves.map(toID).includes(toID(species.requiredMove))) {
 				// Meloetta-Pirouette, Rayquaza-Mega
 				problems.push(`${species.name} transforms in-battle with ${species.requiredMove}, please fix its moves.`);
@@ -1606,7 +1607,7 @@ export class TeamValidator {
 				throw new Error(`${species.name} should have a string battleOnly`);
 			}
 			// Set to out-of-battle forme
-			set.species = species.battleOnly;
+			// set.species = species.battleOnly;
 		} else {
 			if (species.requiredAbility) {
 				// Impossible!
