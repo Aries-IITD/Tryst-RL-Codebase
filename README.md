@@ -35,10 +35,12 @@ For the bot client, in the `client` folder create a venv and install all depende
 ```
 pip install -r requirements.txt
 ```
+Even if the pip install raises an error, you can try running the next steps and installing required modules independently if it raises an error.
+
 Put the port number for your server in the link in `client/env.txt`. Change the second line to your assigned code.
 You can run 
 ```
-python3 driver.py -h
+python(or python3) driver.py -h
 ```
 to check all the command line arguments. You can change the mode to battle against one of your AIs, or to wait on the ladder for battles.
 We have given 5 options for AIs: random, ai1, ai2, ai3, ai4. Random is pre-implemented, while ai1-ai4 can be implemented in `ai.py`.
