@@ -48,7 +48,7 @@ def get_kwargs(ply, ind=0):
         "server_configuration": LocalServerConfig,
         "code": codes[ind],
         "start_timer_on_battle_start": True,
-        "battle_format": 'gen7letsgoou',
+        "battle_format": 'gen9nationaldex',
         "log_level": 0,
         "save_replays": save_replay
     }

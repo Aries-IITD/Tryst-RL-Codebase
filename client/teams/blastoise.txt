@@ -1,6 +1,7 @@
 Arcanine  
 Ability: No Ability  
 Level: 50  
+EVs: 1 HP  
 Adamant Nature  
 - Flare Blitz  
 - Superpower  
@@ -10,6 +11,7 @@ Adamant Nature
 Blastoise-Mega
 Ability: No Ability  
 Level: 50  
+EVs: 1 HP  
 Modest Nature  
 - Hydro Pump  
 - Surf  
@@ -19,6 +21,7 @@ Modest Nature
 Vileplume  
 Ability: No Ability  
 Level: 50  
+EVs: 1 HP  
 Calm Nature  
 - Mega Drain  
 - Sludge Bomb  
@@ -28,6 +31,7 @@ Calm Nature
 Alakazam  
 Ability: No Ability  
 Level: 50  
+EVs: 1 HP  
 Timid Nature  
 - Psychic  
 - Shadow Ball  
@@ -37,6 +41,7 @@ Timid Nature
 Rhydon  
 Ability: No Ability  
 Level: 50  
+EVs: 1 HP  
 Impish Nature  
 - Earthquake  
 - Rock Slide  
@@ -46,6 +51,7 @@ Impish Nature
 Tauros
 Ability: No Ability  
 Level: 50  
+EVs: 1 HP  
 Jolly Nature  
 - Double-Edge  
 - Earthquake  

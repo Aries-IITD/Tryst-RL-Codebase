@@ -1,6 +1,7 @@
 Pikachu-Starter  
 Ability: No Ability  
 Level: 50  
+EVs: 1 HP  
 Lonely Nature  
 - Thunderbolt  
 - Floaty Fall  
@@ -10,6 +11,7 @@ Lonely Nature
 Arcanine  
 Ability: No Ability  
 Level: 50  
+EVs: 1 HP  
 Adamant Nature  
 - Flare Blitz  
 - Superpower  
@@ -19,6 +21,7 @@ Adamant Nature
 Gyarados  
 Ability: No Ability  
 Level: 50  
+EVs: 1 HP  
 Adamant Nature  
 - Waterfall  
 - Earthquake  
@@ -28,6 +31,7 @@ Adamant Nature
 Vileplume  
 Ability: No Ability  
 Level: 50  
+EVs: 1 HP  
 Calm Nature  
 - Mega Drain  
 - Sludge Bomb  
@@ -37,6 +41,7 @@ Calm Nature
 Golem  
 Ability: No Ability  
 Level: 50  
+EVs: 1 HP  
 Adamant Nature  
 - Earthquake  
 - Rock Slide  
@@ -46,6 +51,7 @@ Adamant Nature
 Snorlax  
 Ability: No Ability  
 Level: 50  
+EVs: 1 HP  
 Brave Nature  
 - Body Slam  
 - Earthquake  

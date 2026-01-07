@@ -40,9 +40,9 @@ with open("natures.json", "r") as F:
 for t in TEAMS:
     with open(t, "r") as F:
         lines = F.readlines()
-        for i in range(0, len(lines), 9):
+        for i in range(0, len(lines), 10):
             id = "".join(lines[i].split("-")).strip().lower()
-            move_lines = [x[1:].strip() for x in lines[i+4:i+8]]
+            move_lines = [x[1:].strip() for x in lines[i+5:i+9]]
             pkmn_moves[id] = move_lines
             moves.update({to_id_str(x): Move(to_id_str(x), 7) for x in move_lines})
             pkmn_natures[id] = lines[i+3].strip()[:-7].lower()
