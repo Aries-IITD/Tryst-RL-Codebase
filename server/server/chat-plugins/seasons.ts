@@ -225,7 +225,7 @@ export function rollTimer() {
 		clearTimeout(updateTimeout);
 	}
 	updateTimeout = true;
-	void updateBadgeholders();
+	// void updateBadgeholders();
 	const time = Date.now();
 	const next = new Date();
 	next.setHours(next.getHours() + 1, 0, 0, 0);

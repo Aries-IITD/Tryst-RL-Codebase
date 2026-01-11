@@ -43,12 +43,12 @@ const SECONDS = 1000;
 // Timer constants: In seconds, should be multiple of TICK_TIME
 const STARTING_TIME = 15;
 const MAX_TURN_TIME = 30;
-const STARTING_TIME_CHALLENGE = 300;
+const STARTING_TIME_CHALLENGE = 15;
 const STARTING_GRACE_TIME = 15;
-const MAX_TURN_TIME_CHALLENGE = 300;
+const MAX_TURN_TIME_CHALLENGE = 40;
 
-const DISCONNECTION_TIME = 60;
-const DISCONNECTION_BANK_TIME = 300;
+const DISCONNECTION_TIME = 10;
+const DISCONNECTION_BANK_TIME = 10;
 
 // time after a player disabling the timer before they can re-enable it
 const TIMER_COOLDOWN = 20 * SECONDS;

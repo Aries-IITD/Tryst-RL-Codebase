@@ -45,7 +45,7 @@ for t in TEAMS:
             move_lines = [x[1:].strip() for x in lines[i+5:i+9]]
             pkmn_moves[id] = move_lines
             moves.update({to_id_str(x): Move(to_id_str(x), 7) for x in move_lines})
-            pkmn_natures[id] = lines[i+3].strip()[:-7].lower()
+            pkmn_natures[id] = lines[i+4].strip()[:-7].lower()
 
 DATA_DICTS = [pkmn_moves, pkmn_natures]
 
@@ -990,6 +990,7 @@ class DefaultBattleOrder(BattleOrder):
 
 class Ply(Player):
     async def _create_battle(self, split_message: List[str]) -> AbstractBattle:
+        print(split_message)
         """Returns battle object corresponding to received message.
 
         :param split_message: The battle initialisation message.
