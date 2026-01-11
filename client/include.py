@@ -990,7 +990,6 @@ class DefaultBattleOrder(BattleOrder):
 
 class Ply(Player):
     async def _create_battle(self, split_message: List[str]) -> AbstractBattle:
-        print(split_message)
         """Returns battle object corresponding to received message.
 
         :param split_message: The battle initialisation message.

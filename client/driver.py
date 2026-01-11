@@ -68,14 +68,14 @@ LocalServerConfig = ServerConfiguration(
     "https://play.pokemonshowdown.com/action.php?"
 )
 
-def get_kwargs(ply, ind=0):
+def get_kwargs(ply, sr=False, ind=0):
     D = {
         "server_configuration": LocalServerConfig,
         "code": codes[ind],
         "start_timer_on_battle_start": True,
         "battle_format": 'gen9nationaldex',
         "log_level": 0,
-        "save_replays": save_replay
+        "save_replays": sr
     }
 
     if ply == "random":
