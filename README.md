@@ -4,7 +4,7 @@ First, clone this repository. This will download both the server to run it local
 git clone https://github.com/Aries-IITD/Tryst-RL-Codebase.git server
 ```
 
-You also need to have Node.js installed [many online guides exist for this]. Remember to add it to PATH.
+You also need to have Node.js installed v- SPECIFICALLY INSTALL v21.1.0. Remember to add it to PATH.
 Also, Python3 (preferably the latest version) is required.
 
 ```
@@ -50,3 +50,4 @@ If you get an error in running the driver.py after a crash, restart the server.
 
 
 Poke-Env library is open source and available at https://github.com/hsahovic/poke-env/
+
