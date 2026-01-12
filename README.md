@@ -38,6 +38,9 @@ pip install -r requirements.txt
 Even if the pip install raises an error, you can try running the next steps and installing required modules independently if it raises an error.
 
 Put the port number for your server in the link in `client/env.txt`. Change the second line to your assigned code.
+
+In order to send challenges to the bots or queue up on the official competition ladder, you will have to connect to the competition server. For this, change the first line to the IP of the server instead. The IP (and port) for the server is given in the env.txt as well.
+
 You can run 
 ```
 python(or python3) driver.py -h
@@ -54,5 +57,6 @@ If you get an error in running the driver.py after a crash, restart the server.
 
 
 Poke-Env library is open source and available at https://github.com/hsahovic/poke-env/
+
 
 
