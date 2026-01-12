@@ -42,7 +42,11 @@ You can run
 ```
 python(or python3) driver.py -h
 ```
-to check all the command line arguments. You can change the mode to battle against one of your AIs, or to wait on the ladder for battles.
+to check all the command line arguments. You can change the mode to 
+- Battle against one of your own AIs, using the battle argument
+- Wait on the hosted ladder for battles, using the ladder argument. While your ELO gained won't be counted, it is encouraged that everyone does this so you can get a wider experience by battling others' bots.
+- Send challenges to other users, using the challenge argument (used to send challenges to the bots).
+
 We have given 5 options for AIs: random, ai1, ai2, ai3, ai4. Random is pre-implemented, while ai1-ai4 can be implemented in `ai.py`.
 
 If you get an error for no module `poke_env`, try pip installing it separately using `pip install poke_env` or upgrading your pip then repeating the pip install steps again.
@@ -50,4 +54,5 @@ If you get an error in running the driver.py after a crash, restart the server.
 
 
 Poke-Env library is open source and available at https://github.com/hsahovic/poke-env/
+
 
