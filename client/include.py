@@ -78,6 +78,7 @@ def get_pokemon(pokemon: Pokemon) -> Pokemon:
 
     return pokemon
 
+
 def calc_damage(attacker: Pokemon, defender: Pokemon, is_crit=False):
     attacker_moves = [moves[to_id_str(x)] for x in pkmn_moves.get(attacker.species)]
     dmg_dict = {}
@@ -102,10 +103,25 @@ def calc_damage(attacker: Pokemon, defender: Pokemon, is_crit=False):
             dmg_dict[move.id] = [0] * 16
             continue
         
+        base_power = move.base_power
+        if move.id in ["lowkick", "grassknot"]:
+            defender_weight = defender.weight
+            if defender_weight >= 200:
+                base_power = 120
+            elif defender_weight >= 100:
+                base_power = 100
+            elif defender_weight >= 50:
+                base_power = 80
+            elif defender_weight >= 25:
+                base_power = 60
+            elif defender_weight >= 10:
+                base_power = 40
+            else:
+                base_power = 20
         crit = 1.5 if is_crit else 1
         stab = 1.5 if move.type in attacker.types else 1
         eff = move.type.damage_multiplier(*defender.types, type_chart=GenData.from_gen(7).type_chart)
-        raw_damage = math.floor(math.floor((22 * move.base_power * A) / D) / 50) + 2
+        raw_damage = math.floor(math.floor((22 * base_power * A) / D) / 50) + 2
         raw_damage = math.floor(raw_damage * crit)
         dmg_dict[move.id] = [math.floor(math.floor(math.floor(raw_damage * (rand/100)) * stab) * eff) for rand in range(85, 101, 1)]
     

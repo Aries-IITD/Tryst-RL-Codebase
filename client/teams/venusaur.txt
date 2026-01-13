@@ -8,45 +8,45 @@ Adamant Nature
 - Flamethrower  
 - Crunch  
 
-Gyarados  
+Starmie  
 Ability: No Ability  
 Level: 50  
 EVs: 1 HP  
-Adamant Nature  
-- Waterfall  
-- Earthquake  
-- Crunch  
-- Taunt  
+Modest Nature  
+- Surf  
+- Psychic  
+- Ice Beam  
+- Thunder Wave  
 
-Venusaur-Mega
+Venusaur-Mega  
 Ability: No Ability  
 Level: 50  
 EVs: 1 HP  
 Quiet Nature  
 - Power Whip  
-- Mega Drain  
+- Giga Drain  
 - Sludge Bomb  
 - Toxic  
 
-Dugtrio  
+Scizor  
 Ability: No Ability  
 Level: 50  
 EVs: 1 HP  
 Adamant Nature  
-- Earthquake  
-- Rock Slide  
-- Scratch  
-- Facade
+- Bullet Punch  
+- U-turn  
+- Swords Dance  
+- Night Slash 
 
-Golem  
+Nidoking  
 Ability: No Ability  
 Level: 50  
 EVs: 1 HP  
-Adamant Nature  
+Rash Nature  
 - Earthquake  
-- Rock Slide  
-- Double-Edge  
-- Fire Punch  
+- Thunderbolt  
+- Ice Beam  
+- Superpower  
 
 Snorlax  
 Ability: No Ability  
@@ -56,5 +56,4 @@ Brave Nature
 - Body Slam  
 - Earthquake  
 - Thunder Punch  
-- Crunch  
-
+- Fire Punch
