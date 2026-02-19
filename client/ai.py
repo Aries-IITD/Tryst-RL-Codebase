@@ -86,6 +86,16 @@ def choose_move_strongest(battle):
     best_move = all_moves[np.argmax(max_damages)]
     return best_move
 
+
+def print_stats(battle):
+    for mon1 in battle.team.values():
+        for mon2 in battle.opponent_team.values():
+            my_pkmn = mon1
+            enemy_pkmn = get_pokemon(mon2)
+            damages = calc_damage(my_pkmn, enemy_pkmn)
+            print(f"{my_pkmn.species} ({my_pkmn.stats['spe']}) vs {enemy_pkmn.species} ({enemy_pkmn.stats['spe']})", [(move, [int(100 * d / enemy_pkmn.stats["hp"]) for d in dmg]) for move, dmg in damages.items()])
+
+
 class AIPly1(RPly):
     # set team you want to use
     TEAM = CHARIZARD

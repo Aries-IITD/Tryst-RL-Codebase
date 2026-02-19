@@ -68,9 +68,9 @@ def get_pokemon(pokemon: Pokemon) -> Pokemon:
         if stat == "hp":
             pokemon._stats[stat] = base_stat + 75
         else:
-            if boosts[stat] > 1:
+            if boosts[stat] > 0:
                 boost = (2 + boosts[stat]) / 2
-            else:
+            elif boosts[stat] < 0:
                 boost = 2 / (2 - boosts[stat])
             pokemon._stats[stat] = math.floor(math.floor(math.floor((base_stat + 20) * natures.get(pkmn_natures[pokemon.species], "serious")[stat]) * 1.02) * boost)
             if ((stat == "atk") and (pokemon.status == Status.BRN)) or ((stat == "spe") and (pokemon.status == Status.PAR)):
