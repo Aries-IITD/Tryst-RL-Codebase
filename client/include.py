@@ -68,6 +68,7 @@ def get_pokemon(pokemon: Pokemon) -> Pokemon:
         if stat == "hp":
             pokemon._stats[stat] = base_stat + 75
         else:
+            boost = 1
             if boosts[stat] > 0:
                 boost = (2 + boosts[stat]) / 2
             elif boosts[stat] < 0:
