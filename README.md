@@ -55,6 +55,17 @@ We have given 5 options for AIs: random, ai1, ai2, ai3, ai4. Random is pre-imple
 If you get an error for no module `poke_env`, try pip installing it separately using `pip install poke_env` or upgrading your pip then repeating the pip install steps again.
 If you get an error in running the driver.py after a crash, restart the server.
 
+The Bot IDs to send challenges to, to test your implementations, are:
+5ccf9bAIPly11
+2d8493AIPly11
+b815fcAIPly11
+e75c45AIPly11
+
+As an example, you can do
+```
+python driver.py challenge ai1 5ccf9bAIPly11 --replay
+```
+to make your ai1 fight the given bot, and download the replay to your device.
 
 Poke-Env library is open source and available at https://github.com/hsahovic/poke-env/
 
